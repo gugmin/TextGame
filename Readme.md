@@ -27,41 +27,41 @@
     ![GameStartScene](TextGame3/Images/1-1.png)
     * 본인의 이름(아이디)을 적는다.
 
-     ![GameStartScene](TextGame3/Images/1-2.png)
+     ![name](TextGame3/Images/1-2.png)
     * 원하는 직업을 선택한다.
 
-     ![GameStartScene](TextGame3/Images/1-3.png)
+     ![Job](TextGame3/Images/1-3.png)
 
     * 메인화면 진입 1. 상태보기, 2. 인벤토리, 3. 상점
 
-     ![GameStartScene](TextGame3/Images/1-4.png)
+     ![GameMainScene](TextGame3/Images/1-4.png)
 
     1). 상태보기 : 자신의 현재 스탯을 볼 수 있다.
 
-     ![GameStartScene](TextGame3/Images/1-5.png)
+     ![Stats](TextGame3/Images/1-5.png)
 
     2). 인벤토리 : 자신이 가지고 있는 아이템을 볼 수 있고, 장착 및 해제가 가능하다. 
 
-     ![GameStartScene](TextGame3/Images/1-6.png)
+     ![Inventory-1](TextGame3/Images/1-6.png)
 
-     ![GameStartScene](TextGame3/Images/1-7.png)
+     ![Inventory-2](TextGame3/Images/1-7.png)
 
      * 아이템 장착 후 상태 창을 들어가면 스텟이 반영 된걸 확인할 수 있다. 
 
-     ![GameStartScene](TextGame3/Images/1-10.png)
+     ![Inventory-3](TextGame3/Images/1-10.png)
 
 
     3). 상점 : 상점 리스트의 아이템 중 원하는 물건을 구매 할 수 있다.
 
-     ![GameStartScene](TextGame3/Images/1-8.png)
+     ![Shop-1](TextGame3/Images/1-8.png)
 
      * 아이템 구매 후 해당 아이템의 가격이 소지금에서 차감된 걸 확인할 수 있다.
 
-     ![GameStartScene](TextGame3/Images/1-10.png)
+     ![Shop-2](TextGame3/Images/1-10.png)
 
      * 아이템 구매 후 인벤토리를 들어가면 아이템이 추가 된걸 확인할 수 있다.
 
-     ![GameStartScene](TextGame3/Images/1-9.png)
+     ![Shop-3](TextGame3/Images/1-9.png)
 
 
 
