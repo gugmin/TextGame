@@ -24,7 +24,7 @@
 * 게임 진행
     * 시작 씬에서 '0' 을 누른다.
 
-    ![GameStartScene](TextGame3/Images/1-1.png)
+    ![GameStartScene](/TextGame3/Images/1-1.png)
     * 본인의 이름(아이디)을 적는다.
 
      ![name](TextGame3/Images/1-2.png)
