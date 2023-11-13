@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\workspace\\TextGame3\\TextGame3\\TextGame3.csproj": {}
+    "E:\\git\\TextGame\\TextGame3\\TextGame3\\TextGame3.csproj": {}
   },
   "projects": {
-    "E:\\workspace\\TextGame3\\TextGame3\\TextGame3.csproj": {
+    "E:\\git\\TextGame\\TextGame3\\TextGame3\\TextGame3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\workspace\\TextGame3\\TextGame3\\TextGame3.csproj",
+        "projectUniqueName": "E:\\git\\TextGame\\TextGame3\\TextGame3\\TextGame3.csproj",
         "projectName": "TextGame3",
-        "projectPath": "E:\\workspace\\TextGame3\\TextGame3\\TextGame3.csproj",
+        "projectPath": "E:\\git\\TextGame\\TextGame3\\TextGame3\\TextGame3.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "E:\\workspace\\TextGame3\\TextGame3\\obj\\",
+        "outputPath": "E:\\git\\TextGame\\TextGame3\\TextGame3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",

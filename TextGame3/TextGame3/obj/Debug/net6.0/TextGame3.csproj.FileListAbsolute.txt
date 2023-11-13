@@ -12,3 +12,17 @@ E:\workspace\TextGame3\TextGame3\obj\Debug\net6.0\refint\TextGame3.dll
 E:\workspace\TextGame3\TextGame3\obj\Debug\net6.0\TextGame3.pdb
 E:\workspace\TextGame3\TextGame3\obj\Debug\net6.0\TextGame3.genruntimeconfig.cache
 E:\workspace\TextGame3\TextGame3\obj\Debug\net6.0\ref\TextGame3.dll
+E:\git\TextGame\TextGame3\TextGame3\bin\Debug\net6.0\TextGame3.exe
+E:\git\TextGame\TextGame3\TextGame3\bin\Debug\net6.0\TextGame3.deps.json
+E:\git\TextGame\TextGame3\TextGame3\bin\Debug\net6.0\TextGame3.runtimeconfig.json
+E:\git\TextGame\TextGame3\TextGame3\bin\Debug\net6.0\TextGame3.dll
+E:\git\TextGame\TextGame3\TextGame3\bin\Debug\net6.0\TextGame3.pdb
+E:\git\TextGame\TextGame3\TextGame3\obj\Debug\net6.0\TextGame3.GeneratedMSBuildEditorConfig.editorconfig
+E:\git\TextGame\TextGame3\TextGame3\obj\Debug\net6.0\TextGame3.AssemblyInfoInputs.cache
+E:\git\TextGame\TextGame3\TextGame3\obj\Debug\net6.0\TextGame3.AssemblyInfo.cs
+E:\git\TextGame\TextGame3\TextGame3\obj\Debug\net6.0\TextGame3.csproj.CoreCompileInputs.cache
+E:\git\TextGame\TextGame3\TextGame3\obj\Debug\net6.0\TextGame3.dll
+E:\git\TextGame\TextGame3\TextGame3\obj\Debug\net6.0\refint\TextGame3.dll
+E:\git\TextGame\TextGame3\TextGame3\obj\Debug\net6.0\TextGame3.pdb
+E:\git\TextGame\TextGame3\TextGame3\obj\Debug\net6.0\TextGame3.genruntimeconfig.cache
+E:\git\TextGame\TextGame3\TextGame3\obj\Debug\net6.0\ref\TextGame3.dll
