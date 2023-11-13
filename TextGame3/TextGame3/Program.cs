@@ -10,6 +10,7 @@ namespace TextGame
     {
         private static Character player;
         public static List<Item> shopItem;
+        public static List<Item> Inventory;
         public static bool Isequip; //= false;
 
         //private static Item item;
@@ -113,7 +114,7 @@ namespace TextGame
         {
             // 상점 아이템 정보 세팅
             Item shopItem01 = new Item(" 나무 검      ", 4, 0, 50, false);
-            Item shopItem02 = new Item(" 무쇠 창      ", 6, 0, 10, false);
+            Item shopItem02 = new Item(" 무쇠 창      ", 6, 0, 100, false);
             Item shopItem03 = new Item(" 황금 검      ", 8, 0, 150, false);
             Item shopItem04 = new Item(" 다이아 검  ", 10, 0, 200, false);
             Item shopItem05 = new Item(" 티타늄 검  ", 100, 0, 50000, false);
@@ -354,8 +355,8 @@ namespace TextGame
             Console.Clear();
 
             Console.WriteLine("상점");
-            Console.WriteLine("구매 할 물품을 선택하세요.");
-            Console.WriteLine();
+            Console.WriteLine($"구매 할 물품을 선택하세요.     {player.Gold}  G");
+            Console.WriteLine("\n");
             Console.WriteLine("[아이템 목록]");
             for (int i = 0; i < shopItem.Count; i++)
             {
@@ -367,9 +368,10 @@ namespace TextGame
             //}
             Console.WriteLine();
             Console.WriteLine("구입할 아이템을 선택하세요");
+            Console.WriteLine("20000. 판매");
             Console.WriteLine("0. 나가기");
-
-            if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 0 && choice <= shopItem.Count)
+            int.TryParse(Console.ReadLine(), out int choice);
+            if (choice >= 0 && choice <= shopItem.Count)
             {
                 if (choice == 0)
                 {
@@ -385,21 +387,22 @@ namespace TextGame
 
                     // 아이템을 플레이어의 인벤토리에 추가
                     player.Inventory.Add(selectedShopItem);
+                    shopItem.Remove(selectedShopItem);
 
                     Console.WriteLine($"{selectedShopItem.Name}을(를) 구입했습니다. 남은 골드: {player.Gold}");
                     Thread.Sleep(600);
                     DisplayShop(player, shopItem);
                 }
-                //else if ()
-                //{
-
-                //}
                 else
                 {
                     Console.WriteLine("골드가 부족하여 아이템을 구입할 수 없습니다.");
                     Thread.Sleep(600);
                     DisplayShop(player, shopItem);
                 }
+            }
+            else if (choice == 20000)
+            {
+                DisplaySellShop(player, Inventory);
             }
             else
             {
@@ -408,6 +411,57 @@ namespace TextGame
                 DisplayShop(player, shopItem);
             }
         }//DisplayShop()
+
+        static void DisplaySellShop(Character player, List<Item> Inventory)  //상점 - 판매
+        {
+            Console.Clear();
+
+            Console.WriteLine("상점");
+            Console.WriteLine($"판매 할 물품을 선택하세요.     {player.Gold}  G");
+            Console.WriteLine("\n");
+            Console.WriteLine("[아이템 목록]");
+            for (int i = 0; i < player.Inventory.Count; i++)
+            {
+                Console.WriteLine($"{i + 1} : {player.Inventory[i]}");
+            }
+            Console.WriteLine();
+            Console.WriteLine("판매할 아이템을 선택하세요");
+            Console.WriteLine("0. 나가기");
+
+            if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 0 && choice <= player.Inventory.Count)
+            {
+                if (choice == 0)
+                {
+                    DisplayShop(player, shopItem);
+                }
+
+                Item selectedSellShopItem = player.Inventory[choice - 1];
+
+                if (selectedSellShopItem.Price >= 0)
+                {
+                    // 플레이어의 소지금에서 아이템 가격을 더함
+                    player.Gold += selectedSellShopItem.Price;
+                    player.equippedItem = null;
+                    selectedSellShopItem.Isequip = false;
+                    player.Atk -= selectedSellShopItem.Atk;
+                    player.Def -= selectedSellShopItem.Def;
+
+                    // 아이템을 플레이어의 인벤토리에 삭제
+                    shopItem.Add(selectedSellShopItem);
+                    player.Inventory.Remove(selectedSellShopItem);
+
+                    Console.WriteLine($"{selectedSellShopItem.Name}을(를) 판매했습니다. 남은 골드: {player.Gold}");
+                    Thread.Sleep(600);
+                    DisplaySellShop(player, Inventory);
+                }
+            }
+            else
+            {
+                Console.WriteLine("잘못된 선택입니다.");
+                Thread.Sleep(500);
+                DisplayShop(player, Inventory);
+            }
+        }//DisplaySellShop()
 
 
         //input setting
